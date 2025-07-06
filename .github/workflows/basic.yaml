@@ -7,18 +7,17 @@ jobs:
     name: first job
     runs-on: ubuntu-latest
     steps:
-      - name: first step
+      - name: first step 
         uses: actions/checkout@v4
       - name: second step
         run: ls -a
       - name: third step
         run: pwd
   job2:
-      name: second job to run
-      runs-on: windows-latest
-      steps:
-        - name: step 1 of job2
-          uses: actions/checkout@v4
-        - name: step 2 of job2
-          run: pwd
-      
+    name: Second job to run
+    runs-on: windows-latest
+    steps:
+      - name: step 1 of job2
+        uses: actions/checkout@v4
+      - name: step 2 of job2
+        run: pwd
